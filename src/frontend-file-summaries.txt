@@ -1,0 +1,7 @@
+{
+  "frontend/index.html": "HTML entry point with Arunodaya title, jewellery-themed favicon and meta description positioning the brand as a fine jewellery business with fixed HTML parsing issue.",
+  "frontend/src/App.tsx": "Main landing page component featuring jewellery-focused hero section with gem icons, coming soon section describing new collections/custom orders/certified craftsmanship, and footer with attribution using jewellery-themed assets.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for future React Query hooks to interact with the backend.",
+  "frontend/src/index.css": "Global styles with sunrise-inspired OKLCH color palette using warm amber, orange, and earth tones for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended theme tokens matching the sunrise color system and custom typography."
+}

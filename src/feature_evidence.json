@@ -1,0 +1,59 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-landing-page-header-hero-sections-copy-and-content-so-the-app-is-clearly-positioned-for-a-jewellery-related-use-case-while-keeping-the-app-name-arunodaya-all-user-facing-text-must-be-in-english",
+      "featureTitle": "Update the landing page (header/hero/sections) copy and content so the app is clearly positioned for a jewellery-related use case, while keeping the app name “Arunodaya”. All user-facing text must be in English.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-site-metadata-text-to-match-the-jewellery-positioning-e-g-the-html-meta-description-while-keeping-the-title-as-arunodaya-all-user-facing-text-must-be-in-english",
+      "featureTitle": "Update site metadata text to match the jewellery positioning (e.g., the HTML meta description) while keeping the title as “Arunodaya”. All user-facing text must be in English.",
+      "files": [
+        "frontend/index.html"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-replace-non-jewellery-visual-cues-used-in-the-landing-page-content-e-g-icons-used-in-feature-cards-badges-with-jewellery-appropriate-icons-while-keeping-the-overall-layout-coherent",
+      "featureTitle": "Replace non-jewellery visual cues used in the landing page content (e.g., icons used in feature cards/badges) with jewellery-appropriate icons, while keeping the overall layout coherent.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

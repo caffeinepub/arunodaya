@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no methods.",
+  "feature_evidence.json": "Feature evidence listing landing‑page and metadata updates tied to jewellery branding with associated files and test IDs.",
+  "frontend-file-summaries.txt": "Text file summarizing major frontend files and their purposes including landing page, styles, and config.",
+  "frontend/index.css": "Tailwind base style definitions with OKLCH variable palette for light/dark mode and global element styling.",
+  "frontend/index.html": "HTML entry point defining metadata, favicon, and root mount point for the React app.",
+  "frontend/src/App.tsx": "Main React landing page with jewellery‑themed hero, navigation, calls to action, and sections using icons and styled components.",
+  "frontend/src/hooks/useActor.ts": "React hook creating and refreshing a backend actor based on Internet Identity, invalidating queries on identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Authentication context and provider for Internet Identity handling login, stored identities, and status tracking.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder React Query hook wiring actor usage for future backend calls.",
+  "frontend/src/index.css": "Tailwind color and style variables using a sunrise‑inspired palette with balanced light/dark themes.",
+  "frontend/src/main.tsx": "App bootstrap creating React root and wrapping the app with Internet Identity and React Query providers.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration defining dark mode, content paths, extended color system using OKLCH variables, custom animations, and typography/plugins.",
+  "project_state.json": "Project metadata describing the Arunodaya app’s state, requirements, jewellery-themed positioning updates, and needed image adjustments."
+}

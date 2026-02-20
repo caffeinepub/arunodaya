@@ -1,0 +1,69 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Arunodaya jewellery landing page positioning refresh",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "summary": "Rewrite landing page copy/CTAs/section content to position Arunodaya for a jewellery use case (English only) while keeping existing theme styling and working anchors.",
+      "acceptanceCriteria": [
+        "The hero headline/subheadline mention jewellery (e.g., fine jewellery, handcrafted jewellery, designs, craftsmanship) instead of generic tech/sunrise messaging.",
+        "The “Something Amazing is Coming” section is rewritten to describe upcoming jewellery-related features/services (e.g., new collections, custom orders, certifications/craftsmanship, appointments), without adding real e-commerce functionality.",
+        "Navigation and CTA button labels are updated to match a jewellery context (e.g., “Browse Collection”, “Book Appointment”, “Get Updates”), and their anchor targets still work on the page.",
+        "No blue/purple primary palette is introduced; styling remains consistent with the existing theme system."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/arunodaya-logo-jewellery.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the jewellery-themed logo asset (edited from generated/arunodaya-logo.dim_512x512.png per imageRequirements.edits) at this exact path for the header brand mark."
+        },
+        {
+          "path": "frontend/public/assets/generated/arunodaya-hero-bg-jewellery.dim_1920x1080.png",
+          "operation": "create",
+          "description": "Add the jewellery-themed hero background asset (edited from generated/arunodaya-hero-bg.dim_1920x1080.png per imageRequirements.edits) at this exact path for the hero background image."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Update header/hero/coming-soon copy to jewellery positioning (English only) while keeping the app name “Arunodaya”; update navigation link labels and primary/secondary CTA button labels to jewellery-context and ensure href anchors still target existing sections (e.g., #home, #about). Update header logo src to reference frontend/public/assets/generated/arunodaya-logo-jewellery.dim_512x512.png and hero background to reference frontend/public/assets/generated/arunodaya-hero-bg-jewellery.dim_1920x1080.png. Use existing shadcn-ui Button/Card components to preserve current theme consistency; verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Update HTML metadata description to reflect jewellery positioning while keeping the document title as “Arunodaya” (English only).",
+      "acceptanceCriteria": [
+        "`frontend/index.html` meta description no longer describes a generic “new dawn” message and instead describes Arunodaya as a jewellery-focused brand/app.",
+        "Page title remains “Arunodaya”."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/arunodaya-icon-jewellery.dim_256x256.png",
+          "operation": "create",
+          "description": "Add the jewellery-themed app icon asset (edited from generated/arunodaya-icon.dim_256x256.png per imageRequirements.edits) at this exact path so the site can reference it as favicon/apple-touch-icon."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Replace the meta description with jewellery-focused English copy while keeping the <title> as “Arunodaya”. Update favicon and apple-touch-icon references to frontend/public/assets/generated/arunodaya-icon-jewellery.dim_256x256.png."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Replace landing-page icons with jewellery-appropriate symbols while keeping layout coherent and avoiding broken imports.",
+      "acceptanceCriteria": [
+        "Hero badge/feature-card icons are updated to jewellery-relevant symbols (e.g., gem/diamond/ring) and still render correctly.",
+        "No broken imports or missing icon renderings occur in the landing page."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Swap lucide-react icon imports/usages for jewellery-relevant icons (e.g., gem/diamond/ring) in the hero badge and feature cards, ensuring all icon components render without missing imports and the layout remains unchanged."
+        }
+      ]
+    }
+  ]
+}

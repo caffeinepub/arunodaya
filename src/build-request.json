@@ -1,0 +1,89 @@
+{
+  "kind": "build_request",
+  "title": "Update landing page content for a jewellery use case",
+  "projectName": "Arunodaya",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "text": "Update the landing page (header/hero/sections) copy and content so the app is clearly positioned for a jewellery-related use case, while keeping the app name “Arunodaya”. All user-facing text must be in English.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Ok mujhe juwalry kw liya chaiya"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The hero headline/subheadline mention jewellery (e.g., fine jewellery, handcrafted jewellery, designs, craftsmanship) instead of generic tech/sunrise messaging.",
+        "The “Something Amazing is Coming” section is rewritten to describe upcoming jewellery-related features/services (e.g., new collections, custom orders, certifications/craftsmanship, appointments), without adding real e-commerce functionality.",
+        "Navigation and CTA button labels are updated to match a jewellery context (e.g., “Browse Collection”, “Book Appointment”, “Get Updates”), and their anchor targets still work on the page.",
+        "No blue/purple primary palette is introduced; styling remains consistent with the existing theme system."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Update site metadata text to match the jewellery positioning (e.g., the HTML meta description) while keeping the title as “Arunodaya”. All user-facing text must be in English.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Ok mujhe juwalry kw liya chaiya"
+        ]
+      },
+      "acceptanceCriteria": [
+        "`frontend/index.html` meta description no longer describes a generic “new dawn” message and instead describes Arunodaya as a jewellery-focused brand/app.",
+        "Page title remains “Arunodaya”."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Replace non-jewellery visual cues used in the landing page content (e.g., icons used in feature cards/badges) with jewellery-appropriate icons, while keeping the overall layout coherent.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Ok mujhe juwalry kw liya chaiya"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero badge/feature-card icons are updated to jewellery-relevant symbols (e.g., gem/diamond/ring) and still render correctly.",
+        "No broken imports or missing icon renderings occur in the landing page."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: `frontend/src/hooks/useInternetIdentity.ts`, `frontend/src/hooks/useInternetIdentity.tsx`, `frontend/src/hooks/useActor.ts`, `frontend/src/main.tsx`, `frontend/src/components/ui`.",
+    "Keep the backend as a single Motoko actor; no new backend canisters/services.",
+    "Use English for any user-facing text."
+  ],
+  "nonGoals": [
+    "Building a full jewellery e-commerce system (products, cart, checkout, payments).",
+    "Inventory management, order management, shipping, or tax calculation.",
+    "Adding third-party authentication providers (only Internet Identity is supported)."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Add subtle jewellery motifs while keeping the existing brand style (arunodaya-logo.dim_512x512.png > arunodaya-logo-jewellery.dim_512x512.png)",
+      "Make the app icon read as jewellery-themed at small sizes (arunodaya-icon.dim_256x256.png > arunodaya-icon-jewellery.dim_256x256.png)",
+      "Shift the hero background from abstract sunrise to an elegant jewellery-themed background (arunodaya-hero-bg.dim_1920x1080.png > arunodaya-hero-bg-jewellery.dim_1920x1080.png)"
+    ]
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}
